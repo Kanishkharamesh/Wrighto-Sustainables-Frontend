@@ -1,0 +1,589 @@
+/* General Styles */
+.user-homepage-container {
+  font-family: Verdana, sans-serif;
+  color: #2e2e2e;
+  background-color: #fffff2;
+  padding-bottom: 3rem;
+  width: 1536px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* Hero Section */
+.user-homepage-hero {
+  background: linear-gradient(135deg, #e8ffae, #ffffff);
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.user-homepage-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.user-homepage-hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.user-homepage-buttons .user-homepage-btn {
+  margin: 0 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.user-homepage-btn {
+  background-color: greenyellow;
+  color: black;
+}
+
+.user-homepage-btn.secondary {
+  background-color: black;
+  color: white;
+}
+
+.user-homepage-btn:hover {
+  background-color: #d4ff00;
+  color: black;
+}
+
+.user-homepage-btn.secondary:hover {
+  background-color: #484848;
+  color: white;
+}
+
+/* Search Bar */
+.user-homepage-search {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.user-homepage-search input {
+  padding: 0.75rem;
+  border-radius: 15px;
+  border: 1px solid greenyellow;
+  width: 400px;
+  max-width: 80%;
+  font-size: 1rem;
+  margin-right: 10px;
+  background: white;
+  color: black;
+}
+
+.user-homepage-search-btn {
+  background-color: greenyellow;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.user-homepage-search-btn:hover {
+  background-color: #d4ff00;
+  color: black;
+}
+
+/* Categories Section */
+.user-homepage-categories {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.user-homepage-categories h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.user-categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.user-category-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  width: 200px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.user-category-card:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+.user-category-card.active {
+  background-color: greenyellow;
+  color: black;
+  transform: scale(1.1);
+}
+
+.user-category-content {
+  margin-top: 3rem;
+  width: 1040px;
+  height: 300px;
+  text-align: left;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* Featured Products Section */
+.user-homepage-featured {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.user-homepage-featured h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.user-featured-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.user-product-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  width: 300px;
+}
+
+.user-product-card img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.user-product-btn {
+  background-color: greenyellow;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-product-btn:hover {
+  background-color: #198754;
+  color: white;
+}
+
+/* Offers Carousel */
+.user-homepage-offers {
+  padding: 3rem 1rem;
+  color: white;
+}
+
+.user-homepage-offers h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #000000;
+  /* optional spacing below */
+}
+
+
+.user-carousel-item img {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.user-carousel-caption h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.user-carousel-caption p {
+  font-size: 1.2rem;
+}
+
+/* Testimonials Section */
+.user-homepage-testimonials {
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #e8ffae, #ffffff);
+  text-align: center;
+}
+
+.user-homepage-testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.user-testimonials-slider {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Blog Teaser */
+.user-homepage-blog {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.user-homepage-blog h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.user-blog-preview {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.user-blog-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  width: 650px;
+}
+
+.user-blog-card img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.user-blog-btn {
+  background-color: greenyellow;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-top: auto;
+}
+
+.user-blog-btn:hover {
+  background-color: #198754;
+  color: white;
+}
+
+/* Impact Counter Section */
+.user-homepage-impact {
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #e8ffae, #ffffff);
+  text-align: center;
+}
+
+.user-homepage-impact h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-homepage-impact p {
+  font-size: 1.5rem;
+}
+
+.user-count-up {
+  font-weight: bold;
+  font-size: 2rem;
+  color: greenyellow;
+}
+
+/* Countdown Timer */
+.user-countdown-timer {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+
+#countdown {
+  font-size: 2rem;
+  font-weight: bold;
+  color: greenyellow;
+}
+
+/* Sticky Announcement Bar */
+.user-sticky-announcement {
+  background-color: greenyellow;
+  height: 55px;
+  color: black;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Newsletter Signup */
+.user-homepage-newsletter {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.user-homepage-newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.user-homepage-newsletter p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.user-newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.user-newsletter-form input {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: black;
+  background-color: greenyellow;
+  width: 300px;
+  max-width: 80%;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.user-newsletter-btn {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.user-newsletter-btn:hover {
+  background-color: #145d36;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #000000;
+  color: #f0f0f0;
+}
+
+/* Header Styling */
+.dark-mode .user-homepage-header {
+  background-color: #000000;
+  color: #f0f0f0;
+}
+
+.dark-mode .user-homepage-header nav a {
+  color: #f0f0f0;
+}
+
+.dark-mode .user-homepage-header nav a:hover {
+  color: #198754;
+}
+
+.dark-mode .user-header-actions select {
+  background-color: #000000;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+.dark-mode .dark-mode-toggle {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.dark-mode .user-homepage-hero {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.dark-mode .user-homepage-hero h1,
+.dark-mode .user-homepage-hero p {
+  color: #f0f0f0;
+}
+
+.dark-mode .user-homepage-search input {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid greenyellow;
+}
+
+.dark-mode .user-homepage-search-btn {
+  background-color: greenyellow;
+  color: #000000;
+}
+
+.dark-mode .user-category-card {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.dark-mode .user-category-content {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.dark-mode .category-card:hover {
+  background-color: #555;
+}
+
+.dark-mode .user-category-card.active {
+  background-color: greenyellow;
+  color: black;
+}
+
+.dark-mode .user-homepage-featured h2,
+.dark-mode .user-homepage-categories h2 {
+  color: #f0f0f0;
+}
+
+.dark-mode .user-product-card {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.dark-mode .user-product-card img {
+  border-radius: 12px;
+  border: 1px solid #444;
+}
+
+.dark-mode .user-product-btn {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode .user-product-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark-mode .user-homepage-offers h2 {
+  background-color: #000000;
+  color: white;
+}
+
+.dark-mode .user-homepage-testimonials {
+  color: #f0f0f0;
+}
+
+.dark-mode .user-testimonials-slider {
+  color: #f0f0f0;
+}
+
+.dark-mode .user-blog-card {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.dark-mode .user-blog-btn {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode .user-blog-btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.dark-mode .user-homepage-impact {
+  background-color: #2c3e50;
+  color: #f0f0f0;
+}
+
+.dark-mode .user-countdown-timer {
+  color: #f0f0f0;
+}
+
+.dark-mode .user-sticky-announcement {
+  background-color: grey;
+}
+
+.dark-mode .user-homepage-newsletter {
+  background-color: #2c3e50;
+  color: #f0f0f0;
+}
+
+.dark-mode .user-homepage-newsletter h2 {
+  color: #f0f0f0;
+}
+
+.dark-mode .user-homepage-blog h2 {
+  color: #f0f0f0;
+}
+
+.dark-mode .user-homepage-impact h2 {
+  color: #f0f0f0;
+}
+
+.dark-mode .user-homepage-testimonials h2 {
+  color: #f0f0f0;
+}
+
+.dark-mode .user-newsletter-form input {
+  background-color: white;
+  color: #000000;
+}
+
+.dark-mode .user-newsletter-btn {
+  background-color: greenyellow;
+  color: #000000;
+}
+
+.dark-mode .user-newsletter-btn:hover {
+  background-color: rgb(203, 255, 45);
+  color: #000000;
+}
+
+.dark-mode .user-newsletter-form input,
+.dark-mode .user-homepage-search input {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid greenyellow;
+}
+
+
+.dark-mode .user-homepage-testimonials {
+  background: none;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.dark-mode .user-homepage-impact {
+  background: none;
+  background-color: #2c3e50;
+  color: white;
+}
+
+body,
+.user-homepage-container,
+.user-product-card,
+.user-blog-card {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

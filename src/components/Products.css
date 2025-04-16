@@ -1,0 +1,125 @@
+/* Products Page */
+.products-page {
+    font-family: Verdana, sans-serif;
+    color: #2e2e2e;
+    background-color: #fffff2;
+    padding-top: 120px;
+    /* Proper space below fixed header */
+    padding-bottom: 3rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+.dark-mode .products-page {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+/* Products Heading */
+.products-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    transition: color 0.3s ease;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Optional Featured Styling */
+.featured-grid {
+    align-items: stretch;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+/* Dark Mode for Cards */
+.dark-mode .product-card {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.dark-mode .product-card:hover {
+    background-color: #555;
+}
+
+/* Product Image */
+.product-card img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+/* Product Name */
+.product-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Product Description */
+.product-card p {
+    font-size: 1rem;
+    color: #2e2e2e;
+}
+
+.dark-mode .product-card p {
+    color: #f0f0f0;
+}
+
+/* Product Button */
+.product-btn {
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    margin-top: auto;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-btn:hover {
+    background-color: #145d36;
+    color: white;
+}
+
+/* Dark Mode Button */
+.dark-mode .product-btn {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.dark-mode .product-btn:hover {
+    background-color: #555;
+    color: #ffffff;
+}

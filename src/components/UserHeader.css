@@ -1,0 +1,246 @@
+body,
+html {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.user-homepage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 2rem;
+    background: linear-gradient(135deg, #e8ffae, #ffffff);
+    color: black;
+    box-shadow: none;
+    border-radius: 0%;
+}
+
+/* Dark mode toggle button style */
+.dark-mode-toggle {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+/* In dark mode */
+.dark-mode .dark-mode-toggle {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+
+.dark-mode .user-homepage-header {
+    background: linear-gradient(135deg, #333333, #222222);
+    color: white;
+}
+
+.user-homepage-header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.user-homepage-header nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.user-homepage-header nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 2rem;
+}
+
+.user-homepage-header nav a {
+    display: inline-block;
+    width: auto;
+    padding: 2rem 0.7rem;
+    text-align: center;
+}
+
+.dark-mode .user-homepage-header nav a {
+    color: rgb(255, 255, 255);
+}
+
+.user-homepage-header nav a:hover {
+    color: #006905;
+}
+
+.user-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Language Selector */
+.user-header-actions select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+}
+
+.dark-mode .user-header-actions select {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--dropdown-bg, #fff);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 0.5rem 0;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Language Selector */
+.language-selector {
+    position: relative;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: inherit;
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    min-width: 80px;
+}
+
+.lang-dropdown button {
+    padding: 0.4rem 0.8rem;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.lang-dropdown button:hover {
+    background-color: #f0f0f0;
+}
+
+.dark-mode .lang-dropdown {
+    background-color: #333;
+    color: #fff;
+    border-color: #666;
+}
+
+.dark-mode .lang-dropdown button {
+    color: #fff;
+}
+
+.dark-mode .lang-dropdown button:hover {
+    background-color: #444;
+}
+
+/* User Dropdown Fix */
+.user-dropdown {
+    position: relative;
+}
+
+.user-dropdown-menu {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.user-dropdown-menu a,
+.user-dropdown-menu button {
+    padding: 0.5rem 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.user-dropdown-menu a:hover,
+.user-dropdown-menu button:hover {
+    background-color: #f0f0f0;
+}
+
+.dark-mode .user-dropdown-menu {
+    background-color: #333;
+    border-color: #666;
+}
+
+.dark-mode .user-dropdown-menu a,
+.dark-mode .user-dropdown-menu button {
+    color: #fff;
+}
+
+.dark-mode .user-dropdown-menu a:hover,
+.dark-mode .user-dropdown-menu button:hover {
+    background-color: #444;
+}

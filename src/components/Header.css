@@ -1,0 +1,78 @@
+body,
+html {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.homepage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 2rem;
+    background: linear-gradient(135deg, #e8ffae, #ffffff);
+    color: black;
+    box-shadow: none;
+    border-radius: 0%;
+}
+
+.dark-mode .homepage-header {
+    background: linear-gradient(135deg, #333333, #222222);
+    color: white;
+}
+
+.homepage-header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.homepage-header nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.homepage-header nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 2rem;
+}
+
+.homepage-header nav a {
+    display: inline-block;
+    width: auto;
+    padding: 2rem 0.7rem;
+    text-align: center;
+}
+
+.dark-mode .homepage-header nav a {
+    color: rgb(255, 255, 255);
+}
+
+.homepage-header nav a:hover {
+    color: #006905;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Language Selector */
+.header-actions select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+}
+
+.dark-mode .header-actions select {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #666;
+}

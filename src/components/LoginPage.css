@@ -1,0 +1,223 @@
+/* Login Page Container */
+.login-container {
+    font-family: Verdana, sans-serif;
+    background-color: #fffff2;
+    color: #2e2e2e;
+    width: 1530px;
+    height: 710px;
+    padding-top: 90px; 
+}
+
+/* Dark Mode */
+.dark-mode .login-container {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.login-card {
+    background-color: #ffffff;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 500px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Title Style */
+.login-card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+.login-card input[type="email"],
+.login-card input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    border-radius: 10px;
+    border: 1px solid greenyellow;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    transition: border-color 0.3s ease;
+}
+
+.login-card input[type="email"]:focus,
+.login-card input[type="password"]:focus {
+    border-color: #d4ff00;
+    outline: none;
+}
+
+/* Password Field */
+.password-field {
+    position: relative;
+    width: 100%;
+}
+
+.password-field input {
+    width: 100%;
+    padding-right: 2.5rem;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid greenyellow;
+    font-size: 1rem;
+    color: black;
+}
+
+.password-field button:hover {
+    color: #198754;
+}
+
+/* Login Options (Checkbox & Forgot Password) */
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+}
+
+.login-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.login-options a {
+    color: #198754;
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: greenyellow;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #d4ff00;
+    color: black;
+}
+
+/* Social Buttons */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.social-button {
+    flex: 1;
+    padding: 0.6rem;
+    border: 1px solid greenyellow;
+    background-color: #f7f7f7;
+    color: #2e2e2e;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #d4ff00;
+    color: black;
+    border: none;
+}
+
+/* Signup Link */
+.signup-link {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.signup-link a {
+    color: #198754;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode */
+.dark-mode .login-card {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.dark-mode .login-card input[type="email"],
+.dark-mode .login-card input[type="password"] {
+    background-color: white;
+    color: black;
+    border: 1px solid greenyellow;
+}
+
+.dark-mode .login-button {
+    background-color: greenyellow;
+    color: black;
+}
+
+.dark-mode .login-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-mode .social-button {
+    background-color: #444;
+    color: white;
+    border-color: greenyellow;
+}
+
+.dark-mode .social-button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.dark-mode .signup-link a,
+.dark-mode .login-options a {
+    color: greenyellow;
+}
+
+/* Password Visibility Button */
+.password-field button {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #2e2e2e;
+    transition: color 0.3s ease;
+}

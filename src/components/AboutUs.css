@@ -1,0 +1,80 @@
+.aboutus-container {
+    font-family: Verdana, sans-serif;
+    color: #2e2e2e;
+    background-color: #fffff2;
+    padding: 3rem 2rem;
+    width: 1536px;
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.aboutus-hero {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e8ffae, #ffffff);
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.aboutus-hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.aboutus-hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.aboutus-content {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.aboutus-content h2 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #145d36;
+}
+
+.aboutus-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.aboutus-content ul {
+    list-style: disc;
+    padding-left: 2rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.aboutus-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Dark Mode Styles */
+.dark-mode.aboutus-container {
+    background-color: #000000;
+    color: #f0f0f0;
+}
+
+.dark-mode .aboutus-hero {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #f0f0f0;
+}
+
+.dark-mode .aboutus-content {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.dark-mode .aboutus-content h2 {
+    color: greenyellow;
+}

@@ -1,0 +1,124 @@
+.contactus-container {
+    font-family: Verdana, sans-serif;
+    color: #2e2e2e;
+    background-color: #fffff2;
+    width: 1536px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contactus-hero {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e8ffae, #ffffff);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    margin-top: 3.2rem;
+    height: 130px;
+}
+
+.contactus-hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contactus-hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.contactus-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.contactus-info,
+.contactus-form {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    min-width: 450px;
+}
+
+.contactus-info h2,
+.contactus-form h2 {
+    color: #145d36;
+    margin-bottom: 1rem;
+}
+
+.contactus-info p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.contactus-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contactus-form input,
+.contactus-form textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.contactus-form button {
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.contactus-form button:hover {
+    background-color: #198754;
+    color: white;
+}
+
+/* Dark Mode Styles */
+.dark-mode.contactus-container {
+    background-color: #000000;
+    color: #f0f0f0;
+}
+
+.dark-mode .contactus-hero {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #f0f0f0;
+}
+
+.dark-mode .contactus-info,
+.dark-mode .contactus-form {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.dark-mode .contactus-form input,
+.dark-mode .contactus-form textarea {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark-mode .contactus-form button {
+    background-color: greenyellow;
+    color: black;
+}
+
+.dark-mode .contactus-form button:hover {
+    background-color: #000;
+    color: white;
+}

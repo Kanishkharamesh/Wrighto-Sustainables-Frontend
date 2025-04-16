@@ -1,0 +1,168 @@
+/* Base Styles */
+.signup-container {
+    min-height: 100vh;
+    font-family: Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffff2;
+    color: #2e2e2e;
+    padding: 2rem;
+    width: 1530px;
+    margin-top: 0px;
+}
+
+/* New: Input Row Flexbox */
+.input-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.input-row .input-group {
+    flex: 1;
+}
+
+.signup-card {
+    margin-top: 90px;
+    background-color: #ffffff;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 500px;
+    height: 560px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: -1rem;
+}
+
+/* Input Fields */
+.signup-card .input-group {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.signup-card input[type="text"],
+.signup-card input[type="email"],
+.signup-card input[type="password"],
+.signup-card input[type="tel"] {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+    border-radius: 10px;
+    border: 1px solid greenyellow;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    transition: border-color 0.3s ease;
+}
+
+.signup-card input:focus {
+    border-color: #d4ff00;
+    outline: none;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #198754;
+}
+
+/* Password Toggle */
+.toggle-password-signup {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #198754;
+    font-size: 1rem;
+}
+
+/* Signup Button */
+.signup-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: greenyellow;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #d4ff00;
+    color: black;
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.login-link a {
+    color: #198754;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Support */
+.dark-mode .signup-container {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.dark-mode .signup-card {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .signup-card input {
+    background-color: white;
+    color: black;
+    border: 1px solid greenyellow;
+}
+
+.dark-mode .signup-card input:focus {
+    border-color: #d4ff00;
+    outline: none;
+}
+
+.dark-mode .input-icon,
+.dark-mode .toggle-password-signup {
+    color: greenyellow;
+}
+
+.dark-mode .signup-button {
+    background-color: greenyellow;
+    color: black;
+}
+
+.dark-mode .signup-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-mode .login-link a {
+    color: greenyellow;
+}
