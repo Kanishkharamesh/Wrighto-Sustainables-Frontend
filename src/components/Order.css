@@ -1,0 +1,193 @@
+/* Order.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Verdana&display=swap');
+
+.user-order-container {
+  font-family: 'Verdana', sans-serif;
+  background-color: #fffff2;
+  /* Light theme background */
+  color: var(--text-color, #000);
+  padding: 2rem;
+  width: 1500px;
+  margin-top: 100px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-left: 15px;
+}
+
+.user-order-container h2 {
+  text-align: center;
+  color: #145d36;
+  margin-bottom: 1.5rem;
+}
+
+.user-order-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.user-order-section h3 {
+  color: #145d36;
+  margin-bottom: 1rem;
+}
+
+.user-order-product-summary {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.user-order-product-summary img {
+  width: 120px;
+  height: auto;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.user-order-product-summary div {
+  flex: 1;
+}
+
+/* Make input styles specific to user-order-container */
+.user-order-container input[type="number"],
+.user-order-container input[type="text"],
+.user-order-container input[type="email"],
+.user-order-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  font-size: 0.95rem;
+  color: #000;
+}
+
+.user-order-container textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.user-order-container input[readonly] {
+  background-color: #e6e6e6;
+  color: #000;
+  cursor: not-allowed;
+}
+
+.user-order-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.user-order-actions button {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #ccc;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.user-order-actions .user-order-confirm {
+  background-color: #145d36;
+  color: #fff;
+}
+
+.user-order-actions .user-order-confirm:hover {
+  background-color: #0f4729;
+}
+
+.user-order-actions button:hover {
+  opacity: 0.9;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.user-order-section.info {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #444;
+}
+
+.user-order-section.info a {
+  color: #145d36;
+  text-decoration: underline;
+}
+
+/* Light/Dark Mode Customization without using black */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #fffff2;
+    /* light tone for dark mode too */
+    --text-color: #000;
+  }
+
+  .user-order-container {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  .user-order-section {
+    background-color: #fff;
+    border-color: #ccc;
+  }
+
+  .user-order-container input,
+  .user-order-container textarea {
+    background-color: #fff;
+    color: #000;
+    border-color: #ccc;
+  }
+
+  .user-order-container input[readonly] {
+    background-color: #e6e6e6;
+  }
+
+  .user-order-actions .user-order-confirm {
+    background-color: #145d36;
+    color: #fff;
+  }
+
+  .user-order-actions .user-order-confirm:hover {
+    background-color: #0f4729;
+  }
+}
+
+.total-cost-emphasis {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.total-cost-emphasis p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #145d36;
+}
+
+.highlighted-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e60000;
+  margin-top: 10px;
+  text-transform: uppercase;
+}

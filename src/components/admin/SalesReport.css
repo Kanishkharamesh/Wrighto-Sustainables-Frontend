@@ -1,0 +1,64 @@
+.sales-report-container {
+    padding: 20px;
+    width: 1530px;
+}
+
+.sales-report-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #145d36;
+}
+
+.sales-report-summary {
+    display: grid;
+    gap: 30px;
+}
+
+.sales-summary-item {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sales-summary-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.summary-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.stat-card {
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.stat-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.sales-icon {
+    font-size: 2rem;
+    color: #28a745;
+}
+
+.sales-report-loading,
+.sales-report-error {
+    text-align: center;
+    font-size: 1.25rem;
+}

@@ -1,0 +1,187 @@
+.admin-report-sales-popular-report {
+    padding: 2rem;
+    background-color: #fdfdf6;
+    color: #222;
+    font-family: 'Verdana', sans-serif;
+    width: 1530px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.admin-report-sales-popular-report.dark-mode {
+    background-color: #101010;
+    color: #f5f5f5;
+}
+
+.admin-report-sales-popular-report h2 {
+    font-size: 2.2rem;
+    color: #145d36;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.admin-report-sales-section {
+    margin-bottom: 2.5rem;
+}
+
+.admin-report-sales-popular-report h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.admin-report-sales-summary {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: 900px;
+    margin-left: 280px;
+}
+
+.admin-report-sales-summary-box small {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.admin-report-sales-summary-box {
+    flex: 1 1 250px;
+    background: linear-gradient(135deg, #e8ffe8, #ffffff);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
+    border-radius: 14px;
+    padding: 1.2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.admin-report-sales-summary-box:hover {
+    transform: translateY(-5px);
+}
+
+.admin-report-sales-summary-box h4 {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #145d36;
+}
+
+.admin-report-sales-chart-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.admin-report-sales-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.admin-report-sales-product-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.25s ease-in-out;
+    position: relative;
+}
+
+.admin-report-sales-product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.admin-report-sales-product-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+}
+
+.admin-report-sales-report-list {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-report-sales-report-item {
+    display: flex;
+    gap: 1rem;
+    background: linear-gradient(135deg, #e6ffe6, #ffffff);
+    padding: 1rem;
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease;
+    width: 500px;
+    height: 150px;
+}
+
+.admin-report-sales-report-item:hover {
+    background-color: #f5f5f5;
+}
+
+.admin-report-sales-report-img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.admin-report-sales-refresh-btn {
+    background-color: #145d36;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.admin-report-sales-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.admin-report-sales-refresh-btn:hover {
+    background-color: #0f3f27;
+    transform: scale(1.05);
+}
+
+.admin-report-sales-product-card.green {
+    background: linear-gradient(135deg, #e6ffe6, #ffffff);
+}
+
+.admin-report-sales-product-card>h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.low-stock-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}

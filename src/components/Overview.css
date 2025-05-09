@@ -1,0 +1,53 @@
+.overview-container {
+    padding: 1.5rem;
+    font-family: Verdana, sans-serif;
+    color: black;
+}
+
+.overview-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.overview-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #145d36;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.overview-stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: #fffff2;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    margin: 0.5rem 0;
+    color: #145d36;
+}
+
+.overview-extras>div {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

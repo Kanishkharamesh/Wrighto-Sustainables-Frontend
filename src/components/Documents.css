@@ -1,0 +1,121 @@
+/* Documents.css */
+
+.documents-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: darkgreen;
+  }
+  
+  .invoice-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .invoice-card h3 {
+    font-size: 1.5rem;
+    color: #145d36;
+    margin-bottom: 10px;
+  }
+  
+  .invoice-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .invoice-card i {
+    margin-right: 8px;
+    color: #145d36;
+  }
+  
+  .invoice-card table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .invoice-card table th,
+  .invoice-card table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .invoice-card table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+  }
+  
+  .invoice-card table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .invoice-summary {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .invoice-summary p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .invoice-summary p strong {
+    font-weight: bold;
+  }
+  
+  .download-btn {
+    background-color: #145d36;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    transition: background-color 0.3s ease;
+    margin-bottom: -40px;
+    margin-left: 800px;
+    width: 200px;
+  }
+  
+  .download-btn:hover {
+    background-color: #118e2d;
+  }
+  
+  .download-btn i {
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .documents-container {
+      padding: 15px;
+    }
+  
+    .invoice-card {
+      padding: 15px;
+    }
+  
+    .invoice-summary {
+      padding: 10px;
+    }
+  
+    .download-btn {
+      padding: 10px 15px;
+    }
+  }
+  

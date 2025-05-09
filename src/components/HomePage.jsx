@@ -5,8 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus, faLanguage } from '@fortawesome/free-solid-svg-icons';
 import './HomePage.css';
 import Header from '../components/Header.jsx';
+import UserHeader from '../components/UserHeader';
+import { useAuth } from '../context/AuthProvider';
 
 function HomePage() {
+    const { isLoggedIn, loading } = useAuth(); // Now using the loading state
     const [searchTerm, setSearchTerm] = useState('');
     const [darkMode, setDarkMode] = useState(false);
     const [language, setLanguage] = useState('English');
@@ -52,12 +55,27 @@ function HomePage() {
 
     return (
         <div className={`homepage-container ${darkMode ? 'dark-mode' : ''}`}>
-            <Header
-                darkMode={darkMode}
-                toggleDarkMode={toggleDarkMode}
-                language={language}
-                setLanguage={setLanguage}
-            />
+            {/* <Header
+                    darkMode={darkMode}
+                    toggleDarkMode={toggleDarkMode}
+                    language={language}
+                    setLanguage={setLanguage}
+                /> */}
+            {isLoggedIn ? (
+                <UserHeader
+                    darkMode={darkMode}
+                    toggleDarkMode={toggleDarkMode}
+                    language={language}
+                    setLanguage={setLanguage}
+                />
+            ) : (
+                <Header
+                    darkMode={darkMode}
+                    toggleDarkMode={toggleDarkMode}
+                    language={language}
+                    setLanguage={setLanguage}
+                />
+            )}
 
             {/* Hero Section */}
             <div className="homepage-hero">
@@ -107,32 +125,23 @@ function HomePage() {
                 )}
             </div>
 
-            <div className="homepage-featured">
+            <div className="user-homepage-featured">
                 <h2>Featured Products</h2>
-                <div className="featured-grid">
+                <div className="user-featured-grid">
                     {/* Product 1 */}
-                    <div className="product-card">
+                    <div className="user-product-card">
                         <img src="https://neeyog.com/wp-content/uploads/2019/01/C-500ML-FOOD-CONTAINER-B-500x500.jpg" alt="Recyclable Food Container" />
                         <p>Recyclable Food Container</p>
-                        <button className="product-btn">
-                            <FontAwesomeIcon icon={faCartPlus} /> Add to Cart
-                        </button>
                     </div>
                     {/* Product 2 */}
-                    <div className="product-card">
+                    <div className="user-product-card">
                         <img src="https://southplastic.com/wp-content/webp-express/webp-images/uploads/2021/06/SPI-065B_1.jpg.webp" alt="Microwave-Safe Bowl" />
                         <p>Microwave-Safe Bowl</p>
-                        <button className="product-btn">
-                            <FontAwesomeIcon icon={faCartPlus} /> Add to Cart
-                        </button>
                     </div>
                     {/* Product 3 */}
-                    <div className="product-card">
+                    <div className="user-product-card">
                         <img src="https://5.imimg.com/data5/KK/LV/RZ/SELLER-26768775/disposable-plastic-glass.jpg" alt="Transparent Disposable Glass" />
                         <p>Transparent Disposable Glass</p>
-                        <button className="product-btn">
-                            <FontAwesomeIcon icon={faCartPlus} /> Add to Cart
-                        </button>
                     </div>
                 </div>
             </div>

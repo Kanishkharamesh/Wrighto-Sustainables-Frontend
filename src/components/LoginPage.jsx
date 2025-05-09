@@ -24,18 +24,17 @@ function LoginPage() {
     e.preventDefault();
     setError('');
     try {
-      const res = await axios.post('/api/user/login', { email, password });
+      // const res = await axios.post('/api/user/login', { email, password });
+      const res = await axios.post('/api/user/login', { email, password }, { withCredentials: true });
       const { token, user } = res.data;
       console.log('Token:', token);
-      console.log('User:', user);
+      console.log('User:', user);    
 
-      if (rememberMe) {
-        localStorage.setItem("authtoken",token);
-        localStorage.setItem('user', JSON.stringify(user));
+      if (user?.role === 'admin') {
+        navigate('/admin');  // Admin route
       } else {
-        sessionStorage.setItem("authToken", token);
+        navigate('/userhomepage');  // Regular user route
       }
-      navigate('/userhomepage');
     } catch (err) {
       setError(err.response?.data?.message || 'Login failed. Please try again.');
     }

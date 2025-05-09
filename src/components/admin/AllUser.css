@@ -1,0 +1,71 @@
+.all-user-admin-page {
+    padding: 2rem;
+    max-width: 1530px;
+    margin: 0 auto;
+}
+
+.all-user-admin-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #145d36;
+    margin-top: -150px;
+}
+
+.all-user-admin-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Exactly 4 per row */
+    gap: 20px;
+    padding: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .all-user-admin-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .all-user-admin-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .all-user-admin-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.all-user-admin-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.all-user-admin-card:hover {
+    transform: translateY(-5px);
+}
+
+.all-user-admin-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #145d36;
+}
+
+.all-user-admin-name {
+    font-weight: bold;
+    margin: 0.5rem 0;
+}M
+
+.all-user-admin-email,
+.all-user-admin-mobile,
+.all-user-admin-status {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}

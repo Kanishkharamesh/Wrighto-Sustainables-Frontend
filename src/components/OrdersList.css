@@ -1,0 +1,25 @@
+.orders-list-container {
+    padding: 30px;
+    background: var(--bg-color);
+    min-height: 80vh;
+  }
+  
+  .order-card {
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .order-card p {
+    margin: 5px 0;
+  }
+  
+  .order-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  

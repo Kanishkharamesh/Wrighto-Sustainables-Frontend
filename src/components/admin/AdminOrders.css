@@ -1,0 +1,265 @@
+/* Container & Title */
+.orders-container {
+  margin: 20px;
+  padding: 20px;
+  width: 1490px;
+}
+
+.orders-page-title {
+  margin-left: 630px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #145d36;
+  margin-bottom: 30px;
+}
+
+/* Order Card Styling */
+.admin-orders-page-order-card {
+  background: #fff;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+  padding: 15px;
+  border-radius: 8px;
+  margin-right: 208px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Summary section */
+.orders-page-order-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orders-page-order-summary h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.orders-page-order-total {
+  font-size: 1.2rem;
+  color: #145d36;
+  font-weight: bold;
+}
+
+/* Order Items */
+.orders-page-order-items-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.orders-page-order-item {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 0.6rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.orders-page-order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 12px;
+  border-radius: 6px;
+}
+
+.orders-page-order-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.orders-page-product-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.orders-page-product-info {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Optional: Button to view more details */
+.admin-view-details-btn {
+  background-color: #145d36;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.admin-view-details-btn:hover {
+  background-color: #0d4626;
+}
+
+/* Search Bar */
+.admin-order-search-bar {
+  padding: 8px 12px;
+  font-size: 1rem;
+  width: 325px;
+  max-width: 90%;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  color: black;
+  background-color: white;
+  border-radius: 6px;
+  outline: none;
+  margin-left: 245px;
+}
+
+/* Contact Customer Link */
+.contact-customer {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #145d36;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-customer:hover {
+  text-decoration: underline;
+}
+
+.export-csv-btn {
+  background-color: #145d36;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px 0;
+  margin-left: 520px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.export-csv-btn:hover {
+  background-color: #0d4626;
+  transform: scale(1.03);
+}
+
+.admin-button-group {
+  display: flex;
+  gap: 10px;
+  margin-left: -10px;
+  margin-bottom: 5px;
+  margin-top: -40px;
+}
+
+/* CSV Export Button */
+.invoice-admin-button {
+  background-color: #145d36;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  margin-left: 690px;
+}
+
+.invoice-admin-button:hover {
+  background-color: #0f4c2e;
+}
+
+.cancel-admin-button {
+  background-color: #145d36;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.cancel-admin-button:hover {
+  background-color: #0f4c2e;
+}
+
+/* Pagination Controls */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.pagination span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.order-admin-page-btn1 {
+  background-color: #145d36;
+  color: white;
+  margin-right: 20px;
+  margin-left: 120px;
+}
+
+.order-admin-page-btn2 {
+  background-color: #145d36;
+  color: white;
+  margin-right: 150px;
+  margin-left: 30px;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+/* Order Statuses */
+.status-badge.processing {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.status-badge.shipped {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.delivered {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.status-badge.cancelled {
+  background-color: red;
+  color: white;
+}
+
+/* Payment Statuses */
+.status-badge.pending {
+  background-color: #ffeeba;
+  color: #856404;
+}
+
+.status-badge.paid {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.failed {
+  background-color: #f8d7da;
+  color: #721c24;
+}

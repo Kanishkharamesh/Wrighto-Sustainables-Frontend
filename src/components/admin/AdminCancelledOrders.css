@@ -1,0 +1,64 @@
+.admin-cancelled-orders-container {
+    padding: 2rem;
+    width: 1530px;
+    margin: auto;
+    font-family: Verdana, sans-serif;
+    margin-top: -200px;
+  }
+  
+  .admin-cancelled-orders-container h2 {
+    font-size: 2rem;
+    color: darkgreen;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .admin-cancelled-orders-container p {
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .admin-cancelled-orders-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+  
+  .admin-cancelled-orders-card {
+    background-color: #fff0f0;
+    border: 1px solid #e6bcbc;
+    border-left: 5px solid #d00000;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    width: 500px !important;
+  }
+  
+  .admin-cancelled-orders-card p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .admin-cancelled-orders-shipping {
+    margin-top: 1rem;
+    background-color: #ffecec;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .admin-cancelled-orders-card {
+      flex: 1 1 calc(50% - 1rem);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .admin-cancelled-orders-card {
+      flex: 1 1 100%;
+    }
+  }
+  

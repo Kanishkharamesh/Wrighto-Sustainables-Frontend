@@ -1,0 +1,42 @@
+.order-success-container {
+    text-align: center;
+    padding: 50px;
+    color: #145d36;
+    background: var(--bg-color);
+    min-height: 80vh;
+    margin-left: 510px;
+    margin-top: 150px;
+}
+
+.success-icon {
+    font-size: 60px;
+    color: greenyellow;
+    margin-bottom: 20px;
+}
+
+.success-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #145d36;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.success-buttons button:hover {
+    background-color: #0f4428;
+}
+
+.success-icon {
+    font-size: 60px;
+    color: greenyellow;
+    margin-bottom: 20px;
+}
+
+.success-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

@@ -4,7 +4,7 @@ import { Carousel } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus, faLanguage } from '@fortawesome/free-solid-svg-icons';
 import './UserHomePage.css';
-import UserHeader from '../components/UserHeader.jsx';
+import UserHeader from '../components/UserHeader.jsx'
 
 function UserHomePage() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -114,25 +114,16 @@ function UserHomePage() {
                     <div className="user-product-card">
                         <img src="https://neeyog.com/wp-content/uploads/2019/01/C-500ML-FOOD-CONTAINER-B-500x500.jpg" alt="Recyclable Food Container" />
                         <p>Recyclable Food Container</p>
-                        <button className="user-product-btn">
-                            <FontAwesomeIcon icon={faCartPlus} /> Add to Cart
-                        </button>
                     </div>
                     {/* Product 2 */}
                     <div className="user-product-card">
                         <img src="https://southplastic.com/wp-content/webp-express/webp-images/uploads/2021/06/SPI-065B_1.jpg.webp" alt="Microwave-Safe Bowl" />
                         <p>Microwave-Safe Bowl</p>
-                        <button className="user-product-btn">
-                            <FontAwesomeIcon icon={faCartPlus} /> Add to Cart
-                        </button>
                     </div>
                     {/* Product 3 */}
                     <div className="user-product-card">
                         <img src="https://5.imimg.com/data5/KK/LV/RZ/SELLER-26768775/disposable-plastic-glass.jpg" alt="Transparent Disposable Glass" />
                         <p>Transparent Disposable Glass</p>
-                        <button className="user-product-btn">
-                            <FontAwesomeIcon icon={faCartPlus} /> Add to Cart
-                        </button>
                     </div>
                 </div>
             </div>
