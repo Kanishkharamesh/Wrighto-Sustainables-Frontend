@@ -181,7 +181,7 @@ const AdminOrderStatus = () => {
     useEffect(() => {
         const fetchOrders = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/orders/all', {
+                const response = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/orders/all', {
                     withCredentials: true,
                 });
                 setOrders(response.data);
@@ -203,7 +203,7 @@ const AdminOrderStatus = () => {
                 )
             );
 
-            await axios.put(`http://localhost:5000/api/orders/${orderId}/status`, {
+            await axios.put(`https://wrighto-sustainables-backend.onrender.com/api/orders/${orderId}/status`, {
                 status: newStatus,
             }, {
                 withCredentials: true,
@@ -221,7 +221,7 @@ const AdminOrderStatus = () => {
                 )
             );
 
-            await axios.put(`http://localhost:5000/api/orders/payment-status/${orderId}`, {
+            await axios.put(`https://wrighto-sustainables-backend.onrender.com/api/orders/payment-status/${orderId}`, {
                 paymentStatus: newStatus,
             }, {
                 withCredentials: true,

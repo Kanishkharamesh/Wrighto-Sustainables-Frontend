@@ -32,7 +32,7 @@ const MyProfile = ({ darkMode }) => {
     useEffect(() => {
         const fetchUserData = async () => {
             try {
-                const res = await axios.get('/api/user/me', {
+                const res = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/user/me', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`,
                     },

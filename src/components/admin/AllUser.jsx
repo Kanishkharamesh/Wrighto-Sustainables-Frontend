@@ -13,7 +13,7 @@ const AllUsers = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/user/admin/all-users');
+                const response = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/user/admin/all-users');
                 setUsers(response.data);
                 setLoading(false);
             } catch (err) {

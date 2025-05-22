@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate, Link  } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './AddProduct.css'; // optional CSS styling if you want
 
 const AddProduct = () => {
   const navigate = useNavigate();
-  
+
   const [productData, setProductData] = useState({
     name: '',
     description: '',
@@ -30,11 +30,12 @@ const AddProduct = () => {
     isMicrowaveable: false,
     itemForm: '',
     images: '',
+    quantityInStock: '',
   });
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    
+
     if (name.includes('productDimensions.')) {
       const dimensionField = name.split('.')[1];
       setProductData((prev) => ({
@@ -64,7 +65,7 @@ const AddProduct = () => {
         images: productData.images.split(',').map((item) => item.trim()),
       };
 
-      await axios.post('http://localhost:5000/api/product/', sendData, {
+      await axios.post('https://wrighto-sustainables-backend.onrender.com/api/product/', sendData, {
         withCredentials: true,
       });
 
@@ -93,15 +94,12 @@ const AddProduct = () => {
         <input type="text" name="plasticType" placeholder="Plastic Type" value={productData.plasticType} onChange={handleChange} />
         <input type="text" name="shape" placeholder="Shape" value={productData.shape} onChange={handleChange} />
         <input type="text" name="color" placeholder="Colors (comma separated)" value={productData.color} onChange={handleChange} />
-        <label>
-          <input type="checkbox" name="hasLid" checked={productData.hasLid} onChange={handleChange} /> Has Lid
-        </label>
         <input type="text" name="usage" placeholder="Usage (comma separated)" value={productData.usage} onChange={handleChange} />
         <input type="text" name="features" placeholder="Features (comma separated)" value={productData.features} onChange={handleChange} />
         <input type="text" name="packSize" placeholder="Pack Size" value={productData.packSize} onChange={handleChange} />
         <input type="number" name="minOrderQty" placeholder="Minimum Order Quantity" value={productData.minOrderQty} onChange={handleChange} />
-        <input type="number" name="quantityInStock" placeholder="Stock available" value={productData.quantityInStock} onChange={handleChange}  required/>
-        
+        <input type="number" name="quantityInStock" placeholder="Stock available" value={productData.quantityInStock} onChange={handleChange} required />
+
         <div className="dimensions">
           <input type="number" name="productDimensions.length" placeholder="Length (cm)" value={productData.productDimensions.length} onChange={handleChange} />
           <input type="number" name="productDimensions.width" placeholder="Width (cm)" value={productData.productDimensions.width} onChange={handleChange} />
@@ -109,19 +107,48 @@ const AddProduct = () => {
         </div>
 
         <input type="text" name="closureType" placeholder="Closure Type" value={productData.closureType} onChange={handleChange} />
-        <label>
-          <input type="checkbox" name="isDishwasherSafe" checked={productData.isDishwasherSafe} onChange={handleChange} /> Dishwasher Safe
-        </label>
         <input type="text" name="materialTypeFree" placeholder="Material Type Free (comma separated)" value={productData.materialTypeFree} onChange={handleChange} />
         <input type="number" name="itemWeight" placeholder="Item Weight (g)" value={productData.itemWeight} onChange={handleChange} />
         <input type="text" name="itemVolume" placeholder="Item Volume (ml/kg)" value={productData.itemVolume} onChange={handleChange} />
         <input type="text" name="productCareInstructions" placeholder="Care Instructions (comma separated)" value={productData.productCareInstructions} onChange={handleChange} />
-        <label>
-          <input type="checkbox" name="isMicrowaveable" checked={productData.isMicrowaveable} onChange={handleChange} /> Microwaveable
-        </label>
         <input type="text" name="itemForm" placeholder="Item Form (Box/Cup)" value={productData.itemForm} onChange={handleChange} />
-        <input type="text" name="images" placeholder="Image URLs (comma separated)" value={productData.images} onChange={handleChange} />
+        {/* <input type="text" name="images" placeholder="Image URLs (comma separated)" value={productData.images} onChange={handleChange} /> */}
+        <div style={{ width: '100%' }}>
+          <input
+            type="text"
+            name="images"
+            placeholder="Image URLs (comma separated)"
+            value={productData.images}
+            onChange={handleChange}
+            style={{ width: '100%' }}
+          />
+        </div>
+        <br></br>
+        <div className="toggle-switches">
+          <div className="toggle-switch-group">
+            <span className="switch-label">Has Lid Closure</span>
+            <label className="switch">
+              <input type="checkbox" name="hasLid" checked={productData.hasLid} onChange={handleChange} />
+              <span className="slider round"></span>
+            </label>
+          </div>
 
+          <div className="toggle-switch-group">
+            <span className="switch-label">Dishwasher Safe</span>
+            <label className="switch">
+              <input type="checkbox" name="isDishwasherSafe" checked={productData.isDishwasherSafe} onChange={handleChange} />
+              <span className="slider round"></span>
+            </label>
+          </div>
+
+          <div className="toggle-switch-group">
+            <span className="switch-label">Microwaveable</span>
+            <label className="switch">
+              <input type="checkbox" name="isMicrowaveable" checked={productData.isMicrowaveable} onChange={handleChange} />
+              <span className="slider round"></span>
+            </label>
+          </div>
+        </div>
         <button type="submit" className="submit-btn">Add Product</button>
       </form>
     </div>

@@ -16,7 +16,7 @@ const EditProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/product');
+                const response = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/product');
                 setProducts(response.data);
                 setLoading(false);
             } catch (err) {
@@ -32,7 +32,7 @@ const EditProducts = () => {
     // Handle selecting a product for editing
     const handleEdit = async (id) => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/product/${id}`);
+            const response = await axios.get(`https://wrighto-sustainables-backend.onrender.com/api/product/${id}`);
             const product = response.data;
             if (!product.productDimensions) {
                 product.productDimensions = { length: '', width: '', height: '' };
@@ -65,7 +65,7 @@ const EditProducts = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        axios.put(`http://localhost:5000/api/product/${selectedProduct._id}`, selectedProduct, {
+        axios.put(`https://wrighto-sustainables-backend.onrender.com/api/product/${selectedProduct._id}`, selectedProduct, {
             withCredentials: true 
         })
             .then((res) => {

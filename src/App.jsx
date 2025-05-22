@@ -27,6 +27,7 @@ import AdminCancelledOrders from './components/admin/AdminCancelledOrders';
 import AllUser from './components/admin/AllUser';
 import SalesReport from './components/admin/SalesReport';
 import PopularReport from './components/admin/PopularReport';
+import ExportReport from './components/admin/ExportReport';
 import './App.css';
 
 function MainLayout() {
@@ -77,6 +78,7 @@ function App() {
           <Route path="/admin/users" element={<AllUser />} />
           <Route path="/admin/reports/sales" element={<SalesReport />} />
           <Route path="/admin/reports/popular" element={<PopularReport />} />
+          <Route path="/admin/reports/productreport" element={<ExportReport />} />
           {/* Main Layout Routes */}
           <Route path="/*" element={<MainLayout />} />
         </Routes>

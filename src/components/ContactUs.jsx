@@ -13,7 +13,7 @@ function ContactUs({ darkMode, toggleDarkMode, language, setLanguage }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/api/contact', {
+            const res = await axios.post('https://wrighto-sustainables-backend.onrender.com/api/contact', {
                 name, email, message
             }, {
                 withCredentials: true  // Make sure credentials are included (if needed)

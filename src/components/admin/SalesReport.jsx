@@ -104,7 +104,7 @@ const SalesReport = () => {
     useEffect(() => {
         const fetchReport = async () => {
             try {
-                const { data } = await axios.get('http://localhost:5000/api/reports/sales', {
+                const { data } = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/reports/sales', {
                     withCredentials: true,
                 });
                 setReport(data);

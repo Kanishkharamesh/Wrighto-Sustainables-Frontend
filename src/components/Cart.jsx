@@ -20,7 +20,7 @@ const Cart = () => {
     const fetchCart = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/user/cart",
+          "https://wrighto-sustainables-backend.onrender.com/api/user/cart",
           {
             withCredentials: true,
           }

@@ -25,7 +25,7 @@ function LoginPage() {
     setError('');
     try {
       // const res = await axios.post('/api/user/login', { email, password });
-      const res = await axios.post('/api/user/login', { email, password }, { withCredentials: true });
+      const res = await axios.post('https://wrighto-sustainables-backend.onrender.com/api/user/login', { email, password }, { withCredentials: true });
       const { token, user } = res.data;
       console.log('Token:', token);
       console.log('User:', user);    

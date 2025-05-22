@@ -87,7 +87,7 @@ const Documents = () => {
     useEffect(() => {
         const fetchOrders = async () => {
             try {
-                const res = await axios.get('http://localhost:5000/api/user/orders/my', {
+                const res = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/user/orders/my', {
                     withCredentials: true,
                 });
                 setOrders(res.data);

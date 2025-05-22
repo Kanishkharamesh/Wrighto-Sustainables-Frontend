@@ -27,7 +27,7 @@ const Products = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/product');
+                const response = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/product');
                 setProducts(response.data);
                 setLoading(false);
             } catch (err) {

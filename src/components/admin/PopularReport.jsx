@@ -17,7 +17,7 @@ const PopularReport = () => {
     const fetchReport = async () => {
         setLoading(true);
         try {
-            const res = await axios.get("/api/reports/popular");
+            const res = await axios.get("https://wrighto-sustainables-backend.onrender.com/api/reports/popular");
             setBestsellers(res.data.bestsellers || []);
             setLowStockProducts(res.data.lowStockProducts || []);
         } catch (err) {

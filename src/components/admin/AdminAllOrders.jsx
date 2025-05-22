@@ -17,7 +17,7 @@ const AdminAllOrders = () => {
     useEffect(() => {
         const fetchOrdersAndProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/orders/all', {
+                const response = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/orders/all', {
                     withCredentials: true,
                 });
                 const allOrders = response.data;
@@ -36,7 +36,7 @@ const AdminAllOrders = () => {
                 const productResponses = await Promise.all(
                     productIds.map((id) =>
                         axios
-                            .get(`http://localhost:5000/api/product/${id}`)
+                            .get(`https://wrighto-sustainables-backend.onrender.com/api/product/${id}`)
                             .then((res) => ({ [id]: res.data }))
                             .catch((err) => {
                                 console.error(`Error fetching product ${id}:`, err);
@@ -65,7 +65,7 @@ const AdminAllOrders = () => {
     // Handle status change
     const handleStatusChange = async (orderId, status) => {
         try {
-            await axios.put(`http://localhost:5000/api/orders/${orderId}/status`, { status }, {
+            await axios.put(`https://wrighto-sustainables-backend.onrender.com/api/orders/${orderId}/status`, { status }, {
                 withCredentials: true,
             });
             setOrders(orders.map(order => order._id === orderId ? { ...order, status } : order)); // Update status in state
@@ -77,7 +77,7 @@ const AdminAllOrders = () => {
     //CANCEL ORDER
     const handleCancelOrder = async (orderId) => {
         try {
-            const res = await axios.patch(`http://localhost:5000/api/orders/cancel/${orderId}`, {}, { withCredentials: true });
+            const res = await axios.patch(`https://wrighto-sustainables-backend.onrender.com/api/orders/cancel/${orderId}`, {}, { withCredentials: true });
             alert(res.data.message);
             // Optionally refresh orders list here
         } catch (err) {

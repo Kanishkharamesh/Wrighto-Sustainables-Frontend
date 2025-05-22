@@ -38,16 +38,16 @@ const Overview = () => {
   useEffect(() => {
       const fetchOverviewData = async () => {
         try {
-          const userRes = await axios.get('http://localhost:5000/api/user/me', { withCredentials: true });
+          const userRes = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/user/me', { withCredentials: true });
           setUser(userRes.data);
     
-          const ordersRes = await axios.get('http://localhost:5000/api/orders/user-orders', { withCredentials: true });
+          const ordersRes = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/orders/user-orders', { withCredentials: true });
           setOrderCount(ordersRes.data.length);
     
-          const wishlistRes = await axios.get(`http://localhost:5000/api/wishlist/user/${userRes.data._id}`);
+          const wishlistRes = await axios.get(`https://wrighto-sustainables-backend.onrender.com/api/wishlist/user/${userRes.data._id}`);
           setWishlistCount(wishlistRes.data.length);
     
-          const addressRes = await axios.get(`http://localhost:5000/api/address/user/${userRes.data._id}`);
+          const addressRes = await axios.get(`https://wrighto-sustainables-backend.onrender.com/api/address/user/${userRes.data._id}`);
           setAddressCount(addressRes.data.length);
         } catch (err) {
           console.error('Failed to load overview data:', err);

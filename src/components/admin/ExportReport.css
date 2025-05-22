@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+.export-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: -50px;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body.dark-mode .export-container {
+    background-color: #111;
+    border-color: #444;
+}
+
+/* Headings */
+.report-heading {
+    font-size: 2.5rem;
+    color: #145d36;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px
+}
+
+.report-subtext {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.export-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Export Buttons */
+.export-btn,
+.pdf-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.export-btn {
+    background-color: #145d36;
+}
+
+.export-btn:hover {
+    background-color: greenyellow;
+    color: #000;
+    box-shadow: 0 6px 12px rgba(20, 93, 54, 0.4);
+    transform: translateY(-2px);
+}
+
+.export-btn:active {
+    transform: scale(0.98);
+}
+
+.pdf-btn {
+    background-color: #d62828;
+}
+
+.pdf-btn:hover {
+    background-color: #a81e1e;
+    color: white;
+}
+
+body.dark-mode .export-btn {
+    background-color: #228b22;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 255, 0, 0.3);
+}
+
+body.dark-mode .export-btn:hover {
+    background-color: #1b6f1b;
+    box-shadow: 0 6px 12px rgba(0, 255, 0, 0.4);
+    color: #fff;
+}
+
+/* Summary Cards */
+.summary-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    flex-wrap: nowrap;
+}
+
+.summary-card {
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    padding: 1.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #e9ffe4;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.summary-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #145d36;
+}
+
+.summary-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+body.dark-mode .summary-card {
+    background-color: #222;
+    border-color: #444;
+}
+
+body.dark-mode .summary-card h3 {
+    color: #adff2f;
+}
+
+body.dark-mode .summary-card p {
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .summary-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .summary-card {
+        flex: 0 0 45%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .report-heading {
+        font-size: 2rem;
+    }
+
+    .report-subtext {
+        font-size: 1rem;
+    }
+
+    .summary-card {
+        flex: 0 0 100%;
+    }
+}

@@ -1,10 +1,12 @@
 .admin-products-container {
     margin: 20px;
     padding: 20px;
-}
-
-.admin-products-container h2 {
-    margin-left: 230px;
+    width: 100%;
+    max-width: 1300px;
+    text-align: left;
+    margin: 0 auto;
+    margin-left: 150px;
+    margin-right: auto;
 }
 
 .admin-products-list {
@@ -12,8 +14,7 @@
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    margin-left: 270px;
-    width: 900px;
+    text-align: left;
 }
 
 .admin-product-image {
@@ -24,43 +25,52 @@
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
+    margin: 0 auto;
     transition: transform 0.3s ease;
-    margin-left: 300px;
 }
 
 .admin-product-image:hover {
     transform: scale(1.03);
 }
 
-
 .admin-product-card {
     border: 1px solid #145d36;
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 15px;
+    max-width: 1450px;
+    margin: 5px auto;
+    padding: 20px;
     border-radius: 8px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.admin-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .admin-product-summary {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .admin-product-summary h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #333;
+    text-align: left;
 }
 
 .admin-view-details-btn {
     background-color: #145d36;
     color: white;
     border: none;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
@@ -71,39 +81,211 @@
     background-color: #0d4626;
 }
 
-.admin-product-details {
-    padding-top: 15px;
-    color: #555;
-}
-
 .admin-product-price {
     font-size: 1.2rem;
     color: #145d36;
     font-weight: bold;
+    text-align: left;
 }
 
 .admin-product-quantity {
     font-size: 1rem;
     color: #333;
+    text-align: left;
 }
 
-.admin-product-name {
-    font-size: 1.1rem;
-    font-weight: bold;
+.admin-controls input {
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: transparent;
     color: #333;
-    margin-bottom: 8px;
+    border: 1px solid #004110;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.admin-controls select {
+    width: 120px;
+    height: 43px;
+    margin-left: 240px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #004110;
+    margin-top: 20px;
+
+}
+
+.admin-controls input {
+    max-width: 400px;
+}
+
+.admin-export-buttons {
+    background-color: #145d36;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.admin-export-buttons:hover {
+    background-color: #0d4626;
+}
+
+.admin-product-summary-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-product-summary-table th,
+.admin-product-summary-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.admin-product-summary-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #145d36;
+}
+
+.admin-product-summary-table .product-preview {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+}
+
+.admin-product-summary-table .product-status {
+    font-weight: bold;
+    color: #0d4626;
+}
+
+.admin-product-summary-table .admin-view-details-btn {
+    padding: 6px 12px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-product-summary-table .admin-view-details-btn:hover {
+    background-color: green;
+}
+
+.pagination button{
+    color: white;
+    background-color: darkgreen;
+    margin-top: -30px;
+}
+
+/* Show tooltip when hovering over the button */
+.admin-export-buttons:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.admin-product-details {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for separation */
+    max-width: 900px;
+    margin: 20px auto;
 }
 
 .admin-product-image {
     width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.admin-product-details p {
-    margin-bottom: 10px;
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.admin-product-details p strong {
+.product-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd; /* Border around table cells */
+    text-align: left;
+    font-size: 14px;
+}
+
+.product-table td:first-child {
     font-weight: bold;
+    width: 25%; /* Ensures that the labels take up less space */
+    background-color: transparent; /* Light background for labels */
+}
+
+.product-table td:nth-child(even) {
+    background-color: transparent; /* Alternate row color */
+}
+
+.product-table td:last-child {
+    width: 35%; /* Extra space for product details */
+}
+
+.product-table tr:nth-child(odd) td {
+    background-color: transparent; /* White background for odd rows */
+}
+
+.product-table tr:hover td {
+    background-color: #edffdc; /* Highlight row on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-product-details {
+        padding: 15px;
+    }
+
+    .admin-product-image {
+        max-width: 250px;
+    }
+
+    .product-table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .product-table td:first-child {
+        width: 30%;
+    }
+
+    .product-table td:last-child {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-table td {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    .product-table td:first-child {
+        width: 35%;
+    }
+
+    .product-table td:last-child {
+        width: 45%;
+    }
 }

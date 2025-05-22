@@ -144,7 +144,7 @@ function UserHeader({ darkMode, toggleDarkMode, language, setLanguage }) {
     useEffect(() => {
         const fetchUser = async () => {
             try {
-                const res = await axios.get("http://localhost:5000/api/user/me", {
+                const res = await axios.get("https://wrighto-sustainables-backend.onrender.com/api/user/me", {
                     withCredentials: true,
                 });
                 setUser(res.data); // if you return user in response
@@ -173,7 +173,7 @@ function UserHeader({ darkMode, toggleDarkMode, language, setLanguage }) {
 
     const handleLogout = async () => {
         try {
-            await axios.post('/api/user/logout', {}, { withCredentials: true });
+            await axios.post('https://wrighto-sustainables-backend.onrender.com/api/user/logout', {}, { withCredentials: true });
             // Clear local/session storage
             localStorage.removeItem("authtoken");
             localStorage.removeItem("user");

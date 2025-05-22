@@ -17,7 +17,7 @@ const AdminDashboard = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:5000/api/user/logout", {}, { withCredentials: true });
+      await axios.post("https://wrighto-sustainables-backend.onrender.com/api/user/logout", {}, { withCredentials: true });
       navigate("/login");
     } catch (error) {
       console.error("Logout failed:", error);
@@ -117,10 +117,10 @@ const AdminDashboard = () => {
             <h3>Product Popularity</h3>
             <p>Analyze bestsellers and low-stock items.</p>
           </Link>
-          <Link to="/admin/reports/orders" className="card">
+          <Link to="/admin/reports/productreport" className="card">
             <FontAwesomeIcon icon={faChartBar} className="icon" />
-            <h3>Order Volume</h3>
-            <p>View peak times and high-volume periods.</p>
+            <h3>Product Report</h3>
+            <p>View all the product report here.</p>
           </Link>
         </div>
       </div>

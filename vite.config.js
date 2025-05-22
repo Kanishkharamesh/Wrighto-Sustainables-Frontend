@@ -7,7 +7,7 @@ export default defineConfig({
     server: {
         proxy: {
             '/api': {
-                target: 'http://localhost:5000', // ✅ your backend server URL
+                target: 'https://wrighto-sustainables-backend.onrender.com', // ✅ your backend server URL
                 changeOrigin: true,
                 secure: false,
             },

@@ -12,7 +12,7 @@ const Invoice = () => {
     useEffect(() => {
         const fetchOrder = async () => {
             try {
-                const res = await axios.get(`/api/orders/order/${orderId}`, {
+                const res = await axios.get(`https://wrighto-sustainables-backend.onrender.com/api/orders/order/${orderId}`, {
                     withCredentials: true
                 });
                 setOrder(res.data);

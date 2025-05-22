@@ -81,7 +81,7 @@ const Order = () => {
                 deliveryCharge,
             };
 
-            const res = await axios.post("/api/orders/place", payload, {
+            const res = await axios.post("https://wrighto-sustainables-backend.onrender.com/api/orders/place", payload, {
                 withCredentials: true,
             });
 

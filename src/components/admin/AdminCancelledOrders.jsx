@@ -11,7 +11,7 @@ const AdminCancelledOrders = () => {
     useEffect(() => {
         const fetchCancelledOrders = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/orders/cancel', {
+                const response = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/orders/cancel', {
                     withCredentials: true, // Ensure credentials are passed
                 });
                 setOrders(response.data);

@@ -145,7 +145,7 @@ const ProductDetail = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/product/${id}`);
+                const response = await axios.get(`https://wrighto-sustainables-backend.onrender.com/api/product/${id}`);
                 setProduct(response.data);
                 setLoading(false);
             } catch (err) {
@@ -162,7 +162,7 @@ const ProductDetail = () => {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/api/reviews/${id}`);
+                const res = await axios.get(`https://wrighto-sustainables-backend.onrender.com/api/reviews/${id}`);
                 setReviews(res.data);
             } catch (error) {
                 console.error("Failed to fetch reviews:", error);

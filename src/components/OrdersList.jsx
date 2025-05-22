@@ -9,7 +9,7 @@ const OrdersList = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await axios.get("/api/orders/my", { withCredentials: true });
+        const res = await axios.get("https://wrighto-sustainables-backend.onrender.com/api/orders/my", { withCredentials: true });
         setOrders(res.data);
       } catch (err) {
         console.error("Failed to fetch orders:", err);

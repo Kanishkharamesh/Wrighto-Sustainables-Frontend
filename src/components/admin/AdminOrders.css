@@ -6,12 +6,12 @@
 }
 
 .orders-page-title {
-  margin-left: 630px;
+  margin-left: 80px;
   font-size: 2rem;
   font-weight: bold;
   color: #145d36;
   margin-bottom: 30px;
-}
+  }
 
 /* Order Card Styling */
 .admin-orders-page-order-card {
