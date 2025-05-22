@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "start": "serve -s dist",
-  "lint": "eslint .",
-  "preview": "vite preview"
+    "dev": "vite",
+    "build": "vite build",
+    "start": "serve -s dist -l ${PORT}",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.16.1",
@@ -38,6 +38,7 @@
     "react-router-hash-link": "^2.4.3",
     "react-toastify": "^11.0.5",
     "recharts": "^2.15.3",
+    "serve": "^14.2.4",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
