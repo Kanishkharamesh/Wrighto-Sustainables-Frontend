@@ -27,7 +27,7 @@ const EditProfile = ({ userData, setUserData }) => {
     setSaving(true);
     try {
       const res = await axios.put(
-        '/api/user/update-profile',
+        'https://wrighto-sustainables-backend.onrender.com/api/user/update-profile',
         formData,
         { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
       );
