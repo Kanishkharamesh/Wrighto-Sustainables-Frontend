@@ -188,7 +188,7 @@ const Orders = () => {
 
     useEffect(() => {
         axios
-            .get('http://localhost:5000/api/orders/user-orders', { withCredentials: true })
+            .get('https://wrighto-sustainables-backend.onrender.com/api/orders/user-orders', { withCredentials: true })
             .then((res) => {
                 setOrders(res.data);
 
