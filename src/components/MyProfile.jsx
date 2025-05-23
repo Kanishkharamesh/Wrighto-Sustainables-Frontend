@@ -29,21 +29,39 @@ const MyProfile = ({ darkMode }) => {
     const [activeTab, setActiveTab] = useState(storedTab);
     const [userData, setUserData] = useState(null);
 
+    // useEffect(() => {
+    //     const fetchUserData = async () => {
+    //         try {
+    //             const res = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/user/me', {
+    //                 headers: {
+    //                     Authorization: `Bearer ${localStorage.getItem('token')}`,
+    //                 },
+    //             });
+    //             setUserData(res.data);
+    //         } catch (error) {
+    //             console.error('Failed to fetch user data:', error);
+    //         }
+    //     };
+    //     fetchUserData();
+    // }, []);
     useEffect(() => {
-        const fetchUserData = async () => {
-            try {
-                const res = await axios.get('https://wrighto-sustainables-backend.onrender.com/api/user/me', {
-                    headers: {
-                        Authorization: `Bearer ${localStorage.getItem('token')}`,
-                    },
-                });
-                setUserData(res.data);
-            } catch (error) {
-                console.error('Failed to fetch user data:', error);
-            }
-        };
-        fetchUserData();
-    }, []);
+  const fetchUserData = async () => {
+    try {
+      const res = await axios.get(
+        'https://wrighto-sustainables-backend.onrender.com/api/user/me',
+        {
+          withCredentials: true, // <--- This is KEY for cookies
+        }
+      );
+      setUserData(res.data);
+    } catch (error) {
+      console.error('Failed to fetch user data:', error);
+    }
+  };
+
+  fetchUserData();
+}, []);
+
 
     if (!userData) return <div className="my-profile-loading">Loading...</div>;
 
