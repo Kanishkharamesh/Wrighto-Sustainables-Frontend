@@ -205,7 +205,7 @@ const Orders = () => {
                 Promise.all(
                     productIds.map((productId) =>
                         axios
-                            .get(`http://localhost:5000/api/product/product-image/${productId}`)
+                            .get(`'https://wrighto-sustainables-backend.onrender.com/api/product/product-image/${productId}`)
                             .then((response) => ({ [productId]: response.data.image }))
                             .catch((error) => {
                                 console.error('Error fetching product image:', error);
