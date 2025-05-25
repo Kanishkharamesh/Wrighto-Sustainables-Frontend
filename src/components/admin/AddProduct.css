@@ -1,3 +1,5 @@
+
+
 /* Add consistent width and styling for the switches */
 .add-product-page {
   padding: 2rem;
@@ -141,4 +143,20 @@
 
 .add-product-form .switch input:checked+.slider:before {
   transform: translateX(30px);
+}
+
+
+.input-error {
+  border: 1px solid red !important;
+  background-color: #ffe6e6;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
 }
